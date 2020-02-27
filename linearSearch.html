@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Linear Search</title>
+</head>
+
+<body onLoad="linearSearch()">
+    <script>
+        function linearSearch() {
+            // Enter number of values
+            var n = parseInt(prompt("enter number of values"));
+            console.log(n);
+
+            // store values into the array
+            var a = new Array(n);
+            for (var i = 0; i < a.length; i++) {
+                a[i] = parseInt(prompt("enter elements"));
+                console.log(a[i]);
+            }
+
+            // Enter value to search
+            var s = parseInt(prompt("Enter value to search"));
+            console.log(s);
+
+            // search the value
+            for (var i = 0; i < a.length; i++) {
+                if (a[i]==s) {
+                    var t = 1;
+                    break;
+                }
+            }
+            if(t==1){
+                console.log("Element found");
+                document.writeln("Element "+a[i]+ " Found at Position:"+i);
+            }else{
+                console.log("Element not found");
+            }
+
+        }
+
+    </script>
+</body>
+
+</html>
